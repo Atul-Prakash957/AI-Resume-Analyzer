@@ -1,0 +1,58 @@
+/* Background */
+.main {
+    background-color: #0e1117;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #00ADB5;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    color: #b0b3b8;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+    background-color: #1c1f26;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+    margin-bottom: 20px;
+}
+
+/* Button */
+.stButton>button {
+    background-color: #00ADB5;
+    color: white;
+    border-radius: 10px;
+    height: 3em;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* File uploader */
+.stFileUploader {
+    border: 2px dashed #00ADB5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Text area */
+.stTextArea textarea {
+    border-radius: 10px;
+}
+
+/* Section headings */
+.section {
+    color: #00ADB5;
+    font-size: 22px;
+    margin-bottom: 10px;
+}

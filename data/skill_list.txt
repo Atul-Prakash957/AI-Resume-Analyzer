@@ -1,0 +1,193 @@
+python
+java
+c
+c++
+c#
+javascript
+typescript
+go
+rust
+kotlin
+swift
+php
+ruby
+scala
+matlab
+r
+sql
+mysql
+postgresql
+sqlite
+mongodb
+oracle
+nosql
+redis
+elasticsearch
+hadoop
+spark
+hive
+pig
+kafka
+flink
+airflow
+pandas
+numpy
+scipy
+scikit learn
+matplotlib
+seaborn
+plotly
+tensorflow
+keras
+pytorch
+xgboost
+lightgbm
+catboost
+machine learning
+deep learning
+artificial intelligence
+computer vision
+natural language processing
+nlp
+reinforcement learning
+data science
+data analysis
+data mining
+data visualization
+statistics
+probability
+power bi
+tableau
+excel
+google sheets
+bigquery
+snowflake
+databricks
+aws
+amazon web services
+azure
+microsoft azure
+google cloud
+gcp
+docker
+kubernetes
+terraform
+ansible
+jenkins
+github actions
+gitlab ci
+circleci
+devops
+Scikit learn
+linux
+unix
+bash
+shell scripting
+git
+github
+bitbucket
+flask
+django
+fastapi
+spring
+spring boot
+nodejs
+express
+nestjs
+react
+nextjs
+angular
+vue
+svelte
+redux
+html
+html5
+css
+css3
+bootstrap
+tailwind
+material ui
+sass
+webpack
+vite
+rest api
+graphql
+microservices
+grpc
+json
+xml
+soap
+websockets
+jwt
+oauth
+authentication
+authorization
+system design
+distributed systems
+design patterns
+oop
+object oriented programming
+agile
+scrum
+kanban
+jira
+confluence
+unit testing
+integration testing
+pytest
+junit
+selenium
+cypress
+playwright
+appium
+android
+android studio
+ios
+flutter
+react native
+swiftui
+kotlin multiplatform
+unity
+unreal engine
+opencv
+mediapipe
+nltk
+spacy
+transformers
+bert
+llm
+langchain
+vector database
+prompt engineering
+data engineering
+data warehouse
+spark streaming
+stream processing
+real time analytics
+cybersecurity
+network security
+penetration testing
+ethical hacking
+cryptography
+blockchain
+ethereum
+smart contracts
+web3
+cloud computing
+edge computing
+iot
+internet of things
+robotics
+embedded systems
+arduino
+raspberry pi
+computer architecture
+a/b testing
+data analysis
+excel
+partnership development
+sales strategy
+sales forecasting
+performance management
+hr analytics
+
