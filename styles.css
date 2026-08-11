@@ -1,58 +1,134 @@
-/* Background */
-.main {
-    background-color: #0e1117;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Global settings */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
 }
 
-/* Title */
+/* Background */
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #f8fafc;
+}
+
+/* Title Gradient */
 .title {
     text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: #00ADB5;
-    margin-bottom: 10px;
+    font-size: 46px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
 }
 
 /* Subtitle */
 .subtitle {
     text-align: center;
-    color: #b0b3b8;
-    margin-bottom: 30px;
+    color: #94a3b8;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 1.1em;
 }
 
-/* Cards */
-.card {
-    background-color: #1c1f26;
+/* Glassmorphism Cards */
+.stMetric, .stAlert, .css-1r6slb0, div[data-testid="stVerticalBlock"] > div > div > div > div > div[data-testid="stVerticalBlock"] {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px !important;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
-    margin-bottom: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect on cards */
+.stMetric:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Button */
 .stButton>button {
-    background-color: #00ADB5;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
     color: white;
-    border-radius: 10px;
-    height: 3em;
+    border: none;
+    border-radius: 12px;
+    height: 3.5em;
     width: 100%;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.stButton>button:hover {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+    color: white;
 }
 
 /* File uploader */
 .stFileUploader {
-    border: 2px dashed #00ADB5;
-    padding: 10px;
-    border-radius: 10px;
+    border: 2px dashed rgba(56, 189, 248, 0.4);
+    padding: 15px;
+    border-radius: 16px;
+    background: rgba(255,255,255, 0.02);
+    transition: border-color 0.3s ease;
+}
+
+.stFileUploader:hover {
+    border-color: rgba(56, 189, 248, 0.8);
 }
 
 /* Text area */
 .stTextArea textarea {
-    border-radius: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.05);
+    color: white;
 }
 
 /* Section headings */
-.section {
-    color: #00ADB5;
-    font-size: 22px;
-    margin-bottom: 10px;
+h2, h3 {
+    color: #e2e8f0 !important;
+    font-weight: 600 !important;
+}
+
+.section-icon {
+    margin-right: 8px;
+    color: #38bdf8;
+}
+
+/* Course Recommendations Cards */
+.course-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-left: 4px solid #38bdf8;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card a {
+    color: #e2e8f0 !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    display: block;
+}
+
+.course-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(56, 189, 248, 0.2);
+    border-left: 4px solid #8b5cf6;
+}
+
+.course-card:hover a {
+    color: #38bdf8 !important;
+    text-decoration: none;
 }

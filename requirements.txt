@@ -2,3 +2,7 @@ streamlit
 pdfplumber
 scikit-learn
 pandas
+datasets
+google-generativeai
+plotly
+python-dotenv

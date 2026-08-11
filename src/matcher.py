@@ -18,5 +18,5 @@ def match_skills(resume_text, jd_text):
     # 🔥 NEW: Course Recommendation (top 3 missing skills)
     top_missing = missing[:3]
     courses = recommend_courses(top_missing)
-
+ 
     return resume_skills, jd_skills, matched, missing, round(score, 2), courses

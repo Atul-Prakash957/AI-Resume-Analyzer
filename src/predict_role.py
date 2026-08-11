@@ -13,14 +13,3 @@ def predict_role(text):
 
     return role
 
-
-# # test the model when file is run directly
-# if __name__ == "__main__":
-
-#     sample_resume = """
-#     Python pandas machine learning deep learning SQL numpy
-#     """
-
-#     result = predict_role(sample_resume)
-
-#     print("Predicted Role:", result)
