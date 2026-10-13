@@ -3,13 +3,13 @@ import plotly.graph_objects as go
 import os
 from dotenv import load_dotenv
 
+# Load environment variables (for GOOGLE_API_KEY)
+load_dotenv()
+
 from src.preprocess_pdf import preprocess_resume
 from src.predict_role import predict_role
 from src.matcher import match_skills
 from src.recommender import get_ai_feedback
-
-# Load environment variables (for GOOGLE_API_KEY)
-load_dotenv()
 
 st.set_page_config(page_title="AI Resume Analyzer", layout="wide")
 

@@ -1,9 +1,14 @@
 import os
+from dotenv import load_dotenv
 import google.generativeai as genai
 
+# Load environment variables
+load_dotenv()
+
 # Setup Gemini AI
-# The user needs to have GOOGLE_API_KEY set in their environment or .env
-genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
+api_key = os.environ.get("GOOGLE_API_KEY")
+if api_key:
+    genai.configure(api_key=api_key)
 
 # Use a standard flash model for fast text generation
 generation_config = {
@@ -24,7 +29,10 @@ def recommend_courses(missing_skills):
     recommendations = {}
     
     try:
-        model = genai.GenerativeModel('gemini-2.5-flash', generation_config=generation_config)
+        api_key = os.environ.get("GOOGLE_API_KEY")
+        if api_key:
+            genai.configure(api_key=api_key)
+        model = genai.GenerativeModel('gemini-3.5-flash-lite', generation_config=generation_config)
         
         for skill in missing_skills[:3]: # Limit to top 3 missing skills to save time
             prompt = f"""
@@ -65,7 +73,10 @@ def get_ai_feedback(resume_text, jd_text, role, score):
     Generates a personalized 2-3 sentence feedback summary.
     """
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash', generation_config=generation_config)
+        if not os.environ.get("GOOGLE_API_KEY"):
+            return "Configure your GOOGLE_API_KEY to receive personalized AI feedback!"
+        genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
+        model = genai.GenerativeModel('gemini-3.5-flash-lite', generation_config=generation_config)
         prompt = f"""
         Act as an expert technical recruiter. 
         A candidate applied for a job with this description: "{jd_text[:500]}..."
